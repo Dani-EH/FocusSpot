@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">FocusSpot</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_favorites">Favorites</string>
+    <string name="nav_suggest">Suggest</string>
+    <string-array name="category_array">
+        <item>Cafe</item>
+        <item>Library</item>
+        <item>Co-working Space</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="noise_array">
+        <item>Quiet</item>
+        <item>Medium</item>
+        <item>Loud</item>
+    </string-array>
+    <string-array name="crowd_array">
+        <item>Low</item>
+        <item>Moderate</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="space_array">
+        <item>Available</item>
+        <item>Limited</item>
+        <item>Full</item>
+    </string-array>
+</resources>

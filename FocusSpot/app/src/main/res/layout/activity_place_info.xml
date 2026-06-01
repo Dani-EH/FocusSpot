@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_beige"
+    tools:context=".PlaceInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <ImageView
+                android:id="@+id/place_image_info"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/logo"
+                android:contentDescription="Place image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginTop="-20dp"
+                android:background="@drawable/rounded_top_corners">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/place_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_dark"
+                        android:text="Place Name" />
+
+                    <ImageView
+                        android:id="@+id/favorite_btn_info"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/btn_star_big_off"
+                        app:tint="@color/suitability_yellow"
+                        android:contentDescription="Favorite button" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/place_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_gray"
+                    android:text="Category" />
+
+                <TextView
+                    android:id="@+id/suitability_tag_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="4dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="@drawable/tag_green"
+                    android:text="Suitable" />
+
+                <TextView
+                    android:id="@+id/place_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Description goes here..."
+                    android:textColor="@color/text_dark"
+                    android:textSize="15sp"
+                    android:lineSpacingExtra="4dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="20dp"
+                    android:background="#DDDDDD" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Environment"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_dark"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:id="@+id/place_noise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Noise Level: "
+                    android:textColor="@color/text_dark"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/place_crowd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Crowd Level: "
+                    android:textColor="@color/text_dark"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/place_space"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Space Availability: "
+                    android:textColor="@color/text_dark"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/place_wifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WiFi: "
+                    android:textColor="@color/text_dark"
+                    android:layout_marginBottom="24dp"/>
+
+                <Button
+                    android:id="@+id/view_on_maps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View on Maps"
+                    android:backgroundTint="@color/brand_green_light"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="12dp"/>
+
+                <Button
+                    android:id="@+id/update_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update Current Status"
+                    android:backgroundTint="@color/brand_green"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="12dp"/>
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:backgroundTint="@color/suitability_gray"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

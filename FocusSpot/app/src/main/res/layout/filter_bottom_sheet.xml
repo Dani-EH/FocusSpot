@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter Places"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Noise Level"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/noiseChipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        android:layout_marginBottom="16dp">
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipQuiet"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiet" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipMedium"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipLoud"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loud" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crowd Level"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/crowdChipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        android:layout_marginBottom="16dp">
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipLowCrowd"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Low" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipModerateCrowd"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moderate" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipHighCrowd"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Space Availability"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/spaceChipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        android:layout_marginBottom="24dp">
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipAvailable"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipLimited"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limited" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipFull"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnReset"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Reset" />
+
+        <Button
+            android:id="@+id/btnApply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Apply" />
+    </LinearLayout>
+
+</LinearLayout>
